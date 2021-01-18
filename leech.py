@@ -32,18 +32,31 @@ zoom=16
 
 tpe=get_tiles_per_edge(zoom)
 
-luLat=55.79546234499761
-luLong=37.5500753590002
+luLat=55.91300534789427
+luLong=37.33857537646282
 
 
 ylu=lat2tile(luLat,tpe)
 xlu=lng2tile(luLong,tpe)
 
-rlLat=55.57390656629218
-rlLong=37.85511006825016
+rlLat=55.56869642116329
+rlLong=37.88337734591134
+
+ 
 
 yrl=lat2tile(rlLat,tpe)
 xrl=lng2tile(rlLong,tpe)
+
+
+luLat = round(luLat *1e6)
+luLong = round(luLong *1e6)
+
+rlLat = round(rlLat *1e6)
+rlLong = round(rlLong *1e6)
+
+
+print ([luLat,luLong,rlLat,rlLong])
+
 
 
 
@@ -57,7 +70,8 @@ xrl=lng2tile(rlLong,tpe)
 
 #cookie='csrftoken=FoVYy3YfFxFk7WINqjvOrwVY1mxcL9xC; ingress.intelmap.shflt=viz; ingress.intelmap.lat=55.75645370999264; ingress.intelmap.lng=37.17518909179695; ingress.intelmap.zoom=10; SACSID=~AJKiYcEXfA0EdQBfqtHr2AJw2cub6GTmR6OVQNAsie9AbC-C6Gv10t7Zm7cX4a6o-naqVf-3IKtakIFWWr-577aa2qHHywE4o3qr36oLwDVJroDJxpbLe7Cs4vvv7FF7uuQcVhnHzshvrM_wHekkC1WAf9xcJhuzgPNVptEjARzXYG-2ZpeEWdThqSymX4B__UTaTuZ1DUS6EYB3wsFvQnPkCtL6rq84ES0ybLt3neHMM1ahVFkF39GbO8RdSySPGOMaUxyQaqXrrmPMrmXR5h0vzsCjlWw94WhHm8E-BY4R0fMSkTcwa0k'
 #cookie='csrftoken=FoVYy3YfFxFk7WINqjvOrwVY1mxcL9xC; ingress.intelmap.shflt=viz; ingress.intelmap.lat=55.555430161986514; ingress.intelmap.lng=37.8629601890107; ingress.intelmap.zoom=11; SACSID=~AJKiYcHww25IdAanJIRwjpeVWvvv7USuGNI4H3t6DiERinxnN_MsCRxNHe1gq4RBAuy7IbkI7AOyT4PKYvBeasN22NYHSzTSF03CEBWbru1G3g-OZ_iw4H7shV0qvVJeM2ucAJro6FLfebm6rn9mp18mwIDcEzhhqPSWN_cMlRY7PJ9TNQi09NCOQZAyBNmRY1RBcgUhSTftA1o3Mj_auhzxeT68Qg-fjmdG7qAfMOE4Y9k6VI1W4XCqJwNZXRlgZVRv8kcni2prr0xPEVDeQ-TwnJb7D0y5snQDOib1K4kJT2JHzOz8Y8I'
-cookie='srftoken=o2Fv38SUOppaVyWwjguvrhAYMCb3ZYUiGM9ie0HGFfW5HSY6E50TwFkeYkkZyshr; sessionid=.eJyrViotTi3yTFGyUkpLSjM2NE62SDM0NTNPsTRW0gHLueYmZuYApRMTizOMLB3SQVy95PxcoHRBUX5ZZkpqEVDW3d_f3ccVKFacWlycmZ8XlloEooAyRkq1AEiNIAQ:1kv1Mh:3ROMtvyHmjuBCZFSB927srZxuOk; _ga=GA1.1.1104953344.1609434237; _gid=GA1.1.248469196.1609434237; _gat=1; ingress.intelmap.shflt=viz; _ncc=1; ingress.intelmap.lat=55.75113630401694; ingress.intelmap.lng=37.61714102309536; ingress.intelmap.zoom='+str(zoom)
+#cookie='srftoken=o2Fv38SUOppaVyWwjguvrhAYMCb3ZYUiGM9ie0HGFfW5HSY6E50TwFkeYkkZyshr; sessionid=.eJyrViotTi3yTFGyUkpLSjM2NE62SDM0NTNPsTRW0gHLueYmZuYApRMTizOMLB3SQVy95PxcoHRBUX5ZZkpqEVDW3d_f3ccVKFacWlycmZ8XlloEooAyRkq1AEiNIAQ:1kv1Mh:3ROMtvyHmjuBCZFSB927srZxuOk; _ga=GA1.1.1104953344.1609434237; _gid=GA1.1.248469196.1609434237; _gat=1; ingress.intelmap.shflt=viz; _ncc=1; ingress.intelmap.lat=55.75113630401694; ingress.intelmap.lng=37.61714102309536; ingress.intelmap.zoom='+str(zoom)
+cookie='csrftoken=o2Fv38SUOppaVyWwjguvrhAYMCb3ZYUiGM9ie0HGFfW5HSY6E50TwFkeYkkZyshr; _ga=GA1.1.1104953344.1609434237; _ncc=1; sessionid=.eJyrViotTi3yTFGyUkpLSjM2NE62SDM0NTNPsTRW0gHLueYmZuYApRMTizOMLB3SQVy95PxcoHRBUX5ZZkpqEVDW3d_f3ccVKFacWlycmZ8XlloEooAyRkq1AEiNIAQ:1l1QTQ:fCtsQjAWGo-Am2O_6xbmC57PzfE; _gid=GA1.1.1923722728.1610960723; _gat=1; ingress.intelmap.shflt=viz; ingress.intelmap.lat=55.74492830577692; ingress.intelmap.lng=37.62618238770008; ingress.intelmap.zoom='+str(zoom)
 login='aash29@gmail.com'
 password="'njflhtcc"
 artmap = ingressAPI.IntelMap(cookie,login,password)
@@ -65,7 +79,18 @@ artmap = ingressAPI.IntelMap(cookie,login,password)
 
 with open('Moscow_portals_new.json', 'a', encoding='utf8') as f:
 
+
+
+    plist=dict()
+
+
+    i=0
+
     def grabPortal(guid):
+        global plist
+        global f
+        global i
+
         if not (guid in plist.keys()):
             try:
                 i=i+1
@@ -75,18 +100,21 @@ with open('Moscow_portals_new.json', 'a', encoding='utf8') as f:
                 pd['name'] = p1['result'][8]
                 pd['img'] = p1['result'][7]
                 pd['lat'] = p1['result'][2]
-                pd['long'] = p1['result'                            
+                pd['long'] = p1['result'][3]
+                pd['id'] = guid
                 print(pd)
                 plist[guid]=pd
             except Exception:
                 pass
-            json.dump(pd, f,ensure_ascii=False)
-            f.write('\n')
 
+            print ([rlLat, pd['lat'], luLat])
+            print ([luLong, pd['long'], rlLong])
 
+            if (rlLat<pd['lat']) and (pd['lat']<luLat) and (luLong < pd['long']) and (pd['long']<rlLong):
+                print('saved')
+                json.dump(pd, f,ensure_ascii=False)
+                f.write('\n')
 
-    plist=dict()
-    i=0
     for x in range(xlu,xrl):
         for y in range(ylu, yrl):
             print(x,y)
@@ -105,71 +133,37 @@ with open('Moscow_portals_new.json', 'a', encoding='utf8') as f:
                 for p in portals['result']['map'][tile]['gameEntities']:
                     if (p[2][0]=='e'):
                         guid = p[2][2]
+                        grabPortal(guid)
                         #print(guid)
-                        if not (guid in plist.keys()):
-                            try:
-                                i=i+1
-                                print(i)
-                                p1=artmap.get_portal_details(guid)
-                                pd = dict()
-                                pd['name'] = p1['result'][8]
-                                pd['img'] = p1['result'][7]
-                                pd['lat'] = p1['result'][2]
-                                pd['long'] = p1['result'][3]
-
-                                print(pd)
-                                plist[guid]=pd
-                            except Exception:
-                                pass
-                            json.dump(pd, f,ensure_ascii=False)
-                            f.write('\n')
                         guid = p[2][5]
+                        grabPortal(guid)
                         #print(guid)
-                        if not (guid in plist.keys()):
-                            try:
-                                i=i+1
-                                print(i)
-                                p1=artmap.get_portal_details(guid)
-                                pd = dict()
-                                pd['name'] = p1['result'][8]
-                                pd['img'] = p1['result'][7]
-                                pd['lat'] = p1['result'][2]
-                                pd['long'] = p1['result'][3]
-
-                                print(pd)
-                                plist[guid]=pd
-                            except Exception:
-                                pass
-                            json.dump(pd, f,ensure_ascii=False)
-                            f.write('\n')
-
-
+                        
 
                     if (p[2][0]=='p'):
                         guid=p[0]
-                        if not (guid in plist.keys()):
-                            try:
-                                i=i+1
-                                print(i)
-                                p1=artmap.get_portal_details(guid)
-                                pd = dict()
-                                pd['name'] = p1['result'][8]
-                                pd['img'] = p1['result'][7]
-                                pd['lat'] = p1['result'][2]
-                                pd['long'] = p1['result'][3]
+                        grabPortal(guid)
 
-                                print(pd)
-                                plist[guid]=pd
-                            except Exception:
-                                pass
-                            json.dump(pd, f,ensure_ascii=False)
-                            f.write('\n')
+
+                    if (p[2][0]=='r'):
+                        #print(p)
+                        #print(p[2][2][0][0])
+                        #print(p[2][2][1][0])
+                        #print(p[2][2][2][0])      
+                        guid = p[2][2][0][0]
+                        grabPortal(guid)
+                        #print(guid)
+                        guid = p[2][2][1][0]
+                        grabPortal(guid)
+                        guid = p[2][2][2][0]
+                        grabPortal(guid)
+
             
             except Exception:
                 pass
 
-    with open('Moscow_portals.json', 'w') as f:
-        json.dump(plist, f)
-        f.write('\n')
+with open('Moscow_portals.json', 'w') as f:
+    json.dump(plist, f)
+    f.write('\n')
 
 
